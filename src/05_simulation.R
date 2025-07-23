@@ -25,7 +25,8 @@ params <- c(vij, sij, aij, bij)
 parscale <- 1
 
 
-# How many samples of simulated data do you want to produce?
+# How many samples of simulated data do you want to produce? - if you want to quickly check the code, 
+# you can run for 1 or 2 data simulations.
 n_bootstrap <- as.numeric(
   dlg_input("Please enter the number of simulated data - 
             it is advised to have a minimum number of 500 simulations:")$res)
