@@ -13,7 +13,7 @@ source(file.path("src", "load_functions.R"))
 nstates <- 4
 
 
-# Load the estimated parameters from the real data set
+# Load the estimated parameters from the real dataset
 load(file.path("parameter estimations", "vij.RData"))
 load(file.path("parameter estimations", "sij.RData"))
 load(file.path("parameter estimations", "aij.RData"))
@@ -25,11 +25,10 @@ params <- c(vij, sij, aij, bij)
 parscale <- 1
 
 
-# How many samples of simulated data do you want to produce? - if you want to quickly check the code, 
-# you can run for 1 or 2 data simulations.
+# How many samples of simulated data do you want to produce? - It is advised to have a minimum number of 500 simulations, for 
+# statistically significant results. However, if you want to quickly check the code, you can run it for 1 or 2 dataset simulations.
 n_bootstrap <- as.numeric(
-  dlg_input("Please enter the number of simulated data - 
-            it is advised to have a minimum number of 500 simulations:")$res)
+  dlg_input("Please enter the number of simulated data: ")$res)
 
     # Check for potential invalid bootstrapping number
     if (n_bootstrap == "" || is.na(n_bootstrap) || n_bootstrap < 0 || n_bootstrap == 0 ) {
@@ -46,7 +45,7 @@ n_bootstrap <- as.numeric(
 estimation_list <- list()
 
 
-# Calculate the initial distribution of the 4 states in the real data set for sampling the 
+# Calculate the initial distribution of the 4 states in the real dataset for sampling the 
 # first patient -  For confidentiality reasons, the initial state distribution is not 
 # calculated here. Instead, I will display only the final probabilities
 initial_dist <- c(0.04, 0.02, 0.78, 0.16)
@@ -56,7 +55,7 @@ initial_dist <- c(0.04, 0.02, 0.78, 0.16)
 n_estim <- 1
 while(n_estim <= n_bootstrap){
   
- # Start the data set simulation
+ # Start the dataset simulation
  flog.info(paste0('Bootstrapping sample ', n_estim))
  results_table <- data.table(PATIENT = integer(),
                              state = integer(),
@@ -66,16 +65,16 @@ while(n_estim <= n_bootstrap){
  
  
  
- # Calculate the number of patients from the real data set and produce the same 
+ # Calculate the number of patients from the real dataset and produce the same 
  # number of simulated patients. For confidentiality reasons, the number of patients
- # from the real data set is not calculated here. Instead, I will display only the 
+ # from the real dataset is not calculated here. Instead, I will display only the 
  # final number of total patients.
  n_simulations <- 5932
  death <- 0
  
  # Start the loop for the data simulation
  for (w in 1:n_simulations) {
-   if (w == n_simulations) flog.info(paste0('The simulation of the data set is finished.'))
+   if (w == n_simulations) flog.info(paste0('The simulation of the dataset is finished.'))
    
    # Set the initial time and current state of the patient
    t <- 0
@@ -141,7 +140,7 @@ while(n_estim <= n_bootstrap){
  # ------------------------------ Start the estimation ------------------------------
  
  # Define the initial parameters to start the estimation - They should be the estimated
- # parameters from the real data set.
+ # parameters from the real dataset.
  vij_s <- vij
  sij_s <- sij
  aij_s <- aij
