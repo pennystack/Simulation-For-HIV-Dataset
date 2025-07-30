@@ -4,3 +4,17 @@
  
 
  ###### <small> *Note: The logit transformation was my addition to address a technical issue with the linear transition probabilities. It was not applied in the non-homogeneous semi-Markov model by Mathieu et al.(2007).*
+
+## How to run the code
+
+1. Clone the repository in your computer or download locally the folders "parameter estimations", "src" and "github upload smm_hiv.Rproj".
+2. Open the "github upload smm_hiv.Rproj" file to load the R environment.
+3. Open the R file "05_simulation.R" in the RStudio editor.
+4. Run the first 40 lines of the code.
+5. When the prompt of defining the numbers of bootstrapping samples that you want to create pops up, you can enter any positive number you wish.
+   - For a quick test, you can select to produce 1 or 2 samples *(approx. 10-15 minutes runtime)*.
+   - For statistically valid results, you should enter 500 or more samples *(Warning: the runtime will be significantly longer)*.
+6. Run the code from lines 41-185 to generate the bootstrap samples.
+7. Run the remaining code to compute basic statistics about the estimated parameters from the simulated data *(Includes: p-value, t-value, confidence intervals, means)*.
+
+ ###### <small> *This project was developed using **R version 4.3.1**. Using a different version of R may lead to differences in the estimated parameters from the simulated data, which might not be directly comparable to those obtained from the original data.*
