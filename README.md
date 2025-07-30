@@ -6,6 +6,7 @@
  ###### <small> *Note: The logit transformation was my addition to address a technical issue with the linear transition probabilities. It was not applied in the non-homogeneous semi-Markov model by Mathieu et al.(2007).*
 
 
+
 ## 💻 How to run the code
 
 1. Clone the repository in your computer or download locally the folders **"parameter estimations"**, **"src"** and **"github upload smm_hiv.Rproj"**.
@@ -19,6 +20,7 @@
 7. Run the remaining code to compute basic statistics about the estimated parameters from the simulated data *(Includes: p-value, t-value, confidence intervals, means)*.
 
  ###### <small> *Note: This project was developed using **R version 4.3.1**. Using a different version of R may lead to differences in the estimated parameters from the simulated data, which might not be directly comparable to those obtained from the original data.*
+
 
 
 ## 🔬 More details about the methodology
