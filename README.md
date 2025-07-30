@@ -39,10 +39,12 @@
 
 1. **Parameter estimations** 
 
-   > Files "aij.RData", "bij.RData", "sij.RData", "vij.RData" contain the parameter estimations obtained from the original dataset. These parameters are used for computing the transition probability matrix $P_{ij}$​ and the Weibull duration times, which are used to generate the simulated dataset.
+   Files **"aij.RData"**, **"bij.RData"**, **"sij.RData"**, **"vij.RData"** contain the parameter estimations obtained from the original dataset. These parameters are used for computing the transition probability matrix $P_{ij}$​ and the Weibull duration times, which are used to generate the simulated dataset.
 
 2. **src**
-   
+   - File `05_simulation.R`: Main script where the dataset simulation, parameter estimation on the simulated data and computation of basic statistics for the estimated parameters are performed.
+   - File **"load_functions"**: contains functions that are used for the part of the parameter estimation and the maximization of the likelihood function.
+   - File **"loglikelihoodnew.cpp"**: contains functions written in C++ for calculating functions used inside the likelihood function (e.x. transition probability, probability density, etc) and the likelihood function itself.
 
 
 
