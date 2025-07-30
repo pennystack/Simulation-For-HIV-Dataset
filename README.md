@@ -1,4 +1,4 @@
-## 📑 Contents
+## 📖 Contents
 - [📝 Description of the simulation code](#-description-of-the-simulation-code)
 - [💻 How to run the code](#-how-to-run-the-code)
 - [🔎 More details about the methodology](#-more-details-about-the-methodology)
