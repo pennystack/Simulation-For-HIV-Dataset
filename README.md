@@ -23,4 +23,4 @@
 
 ## 🔬 More details about the methodology
 
- If you are interested in learning more about this topic, you can find my thesis titled *"Non homogeneous semi-Markov processes with application to HIV"* available in Pergamos, the official unified Institutional Repository/Digital Library of the University of Athens, [here](https://pergamos.lib.uoa.gr/uoa/dl/frontend/en/browse/3403042)
+ If you are interested in learning more about this topic, you can find my thesis titled *"Non homogeneous semi-Markov processes with application to HIV"* available in Pergamos, the official unified Institutional Repository/Digital Library of the University of Athens, [here]([https://pergamos.lib.uoa.gr/uoa/dl/frontend/en/browse/3403042](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://pergamos.lib.uoa.gr/uoa/dl/object/3403042/file.pdf&ved=2ahUKEwjQ7M_MpuSOAxVRIxAIHQVvBBQQFnoECBkQAQ&usg=AOvVaw1tymNuOkbKCGtNwmmVFqkl))
