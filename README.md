@@ -35,7 +35,7 @@
 
 ## 💻 How to run the code
 
-1. Clone the repository in your computer or download locally the folders **`parameter estimations`**, **`src`** and `github upload smm_hiv.Rproj`.
+1. Clone the repository in your computer or download locally the folders **`parameter estimations`**, **`src`** and the file `github upload smm_hiv.Rproj`.
 2. Open the `github upload smm_hiv.Rproj` file to load the R environment.
 3. Open the R file `05_simulation.R` in the RStudio editor.
 4. Run the first 40 lines of the code.
