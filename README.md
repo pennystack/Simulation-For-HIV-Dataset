@@ -1,7 +1,7 @@
 ## 📖 Contents
 - [📝 Description of the simulation code](#-description-of-the-simulation-code)
-- [💻 How to run the code](#-how-to-run-the-code)
 - [🗂️ Folder structure](#-folder-structure)
+- [💻 How to run the code](#-how-to-run-the-code)
 - [🔎 More details about the methodology](#-more-details-about-the-methodology)
 
 
@@ -18,11 +18,25 @@
 
 <br>
 
+## 🗂️ Folder structure
+
+1. Folder **Parameter estimations** 
+
+   Files `aij.RData`, `bij.RData`, `sij.RData`, `vij.RData` contain the parameter estimations obtained from the original dataset. These parameters are used for computing the transition probability matrix $P_{ij}$​ and the Weibull duration times, which are used to generate the simulated dataset.
+
+2. Folder **src**
+   - File `05_simulation.R`: Main script where the dataset simulation, parameter estimation on the simulated data and computation of basic statistics for the estimated parameters are performed.
+   - File `load_functions.R`: Contains functions used for parameter estimation and likelihood maximization.
+   - File `loglikelihoodnew.cpp`: Contains C++ functions for calculating components used within the likelihood function (e.g., transition probabilities, probability densities, etc.) as well as the likelihood function itself. *Implementing these functions in C++ significantly reduces the runtime of the parameter estimation.*
+
+
+<br>
+
 ## 💻 How to run the code
 
-1. Clone the repository in your computer or download locally the folders **"parameter estimations"**, **"src"** and **"github upload smm_hiv.Rproj"**.
-2. Open the **"github upload smm_hiv.Rproj"** file to load the R environment.
-3. Open the R file **"05_simulation.R"** in the RStudio editor.
+1. Clone the repository in your computer or download locally the folders `parameter estimations`, `src` and `github upload smm_hiv.Rproj`.
+2. Open the `github upload smm_hiv.Rproj` file to load the R environment.
+3. Open the R file `05_simulation.R` in the RStudio editor.
 4. Run the first 40 lines of the code.
 5. When the prompt of defining the numbers of bootstrapping samples that you want to create pops up, you can enter any positive number you wish.
    - For a quick test, you can select to produce 1 or 2 samples *(~ 10-15 minutes runtime)*.
@@ -31,20 +45,6 @@
 7. Run the remaining code to compute basic statistics about the estimated parameters from the simulated data *(Includes: p-value, t-value, confidence intervals, means)*.
 
  ###### <small> *Note: This project was developed using **R version 4.3.1**. Using a different version of R may lead to differences in the estimated parameters from the simulated data, which might not be directly comparable to those obtained from the original data.*
-
-
-<br>
-
-## 🗂️ Folder structure
-
-1. **Parameter estimations** 
-
-   Files **"aij.RData"**, **"bij.RData"**, **"sij.RData"**, **"vij.RData"** contain the parameter estimations obtained from the original dataset. These parameters are used for computing the transition probability matrix $P_{ij}$​ and the Weibull duration times, which are used to generate the simulated dataset.
-
-2. **src**
-   - File `05_simulation.R`: Main script where the dataset simulation, parameter estimation on the simulated data and computation of basic statistics for the estimated parameters are performed.
-   - File **"load_functions"**: contains functions that are used for the part of the parameter estimation and the maximization of the likelihood function.
-   - File **"loglikelihoodnew.cpp"**: contains functions written in C++ for calculating functions used inside the likelihood function (e.x. transition probability, probability density, etc) and the likelihood function itself.
 
 
 
