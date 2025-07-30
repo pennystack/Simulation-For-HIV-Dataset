@@ -37,7 +37,9 @@
 
 ## 🗂️ Folder structure
 
-1. **Parameter estimations** \\
+1. **Parameter estimations** 
+
+
 Files "aij.RData", "bij.RData", "sij.RData", "vij.RData" contain the parameter estimates obtained from the original dataset. These parameters are used for computing the transition probability matrix $P_{ij}$​ and the Weibull duration times, which are used to generate the simulated dataset.
 
 2. **src**
