@@ -1,6 +1,6 @@
 ## 📖 Contents
 - [📝 Description of the simulation code](#-description-of-the-simulation-code)
-- [🗂️ Folder structure](#-folder-structure)
+- [🗂️ Folder structure](#folder-structure)
 - [💻 How to run the code](#-how-to-run-the-code)
 - [🔎 More details about the methodology](#-more-details-about-the-methodology)
 
