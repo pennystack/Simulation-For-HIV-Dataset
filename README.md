@@ -16,6 +16,7 @@
  ###### <small> *Note: The logit transformation was my addition to address a technical issue with the linear transition probabilities. It was not applied in the non-homogeneous semi-Markov model by Mathieu et al.(2007).*
 
 
+
 <br>
 
 ## 🗂️ Folder structure
@@ -27,6 +28,7 @@
    - `05_simulation.R`: Main script where the dataset simulation, parameter estimation on the simulated data and computation of basic statistics for the estimated parameters are performed.
    - `load_functions.R`: Contains functions used for parameter estimation and likelihood maximization.
    - `loglikelihoodnew.cpp`: Contains C++ functions for calculating components used within the likelihood function (e.g., transition probabilities, probability densities, etc.) as well as the likelihood function itself. *Implementing these functions in C++ significantly reduces the runtime of the parameter estimation.*
+
 
 
 <br>
