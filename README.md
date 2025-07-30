@@ -1,14 +1,16 @@
 ## 📖 Contents
 - [📝 Description of the simulation code](#-description-of-the-simulation-code)
 - [💻 How to run the code](#-how-to-run-the-code)
+- [🗂️ Folder structure](#-folder-structure)
 - [🔎 More details about the methodology](#-more-details-about-the-methodology)
+
 
 
 <br>
 
 ## 📝 Description of the simulation code
 
- The following code was developed to validate and confirm the accuracy of the estimated model parameters in the non homogeneous semi-Markov model (as described in the *"Parametric and non-homogeneous semi-Markov process for HIV control"* by E.Mathieu, Y.Foucher, P.Dellamonica and JP.Daures) for studying the evolution of the disease in HIV - 1 infected patients. The model is described by the logit-transformed linear transition probabilities (corresponding parameters: $a_{ij}$ and $b_{ij}$) and the weibull duration times (corresponding parameters: $v_{ij}$ and $s_{ij}$).
+ The following code was developed to validate and confirm the accuracy of the estimated model parameters in the non homogeneous semi-Markov model (as described in the *"Parametric and non-homogeneous semi-Markov process for HIV control"* by E.Mathieu, Y.Foucher, P.Dellamonica and JP.Daures) for studying the evolution of the disease in HIV - 1 infected patients. The model is described by the logit-transformed linear transition probabilities (corresponding parameters: $a_{ij}$ and $b_{ij}$) and the Weibull duration times (corresponding parameters: $v_{ij}$ and $s_{ij}$).
  
 
  ###### <small> *Note: The logit transformation was my addition to address a technical issue with the linear transition probabilities. It was not applied in the non-homogeneous semi-Markov model by Mathieu et al.(2007).*
@@ -23,12 +25,24 @@
 3. Open the R file **"05_simulation.R"** in the RStudio editor.
 4. Run the first 40 lines of the code.
 5. When the prompt of defining the numbers of bootstrapping samples that you want to create pops up, you can enter any positive number you wish.
-   - For a quick test, you can select to produce 1 or 2 samples *(approx. 10-15 minutes runtime)*.
-   - For statistically valid results, you should enter 500 or more samples *(Warning: the runtime will be significantly longer)*.
+   - For a quick test, you can select to produce 1 or 2 samples *(~ 10-15 minutes runtime)*.
+   - For statistically valid results, you should enter 500 or more samples *(Warning! The runtime will be significantly longer)*.
 6. Run the code from lines 41-185 to generate the bootstrap samples.
 7. Run the remaining code to compute basic statistics about the estimated parameters from the simulated data *(Includes: p-value, t-value, confidence intervals, means)*.
 
  ###### <small> *Note: This project was developed using **R version 4.3.1**. Using a different version of R may lead to differences in the estimated parameters from the simulated data, which might not be directly comparable to those obtained from the original data.*
+
+
+<br>
+
+## 🗂️ Folder structure
+
+1. **Parameter estimations**
+   Files "aij.RData", "bij.RData", "sij.RData", "vij.RData" contain the parameter estimates obtained from the original dataset. These parameters are used for computing the transition probability matrix $P_{ij}$​ and the Weibull duration times, which are used to generate the simulated dataset.
+
+2. **src**
+   
+
 
 
 <br>
