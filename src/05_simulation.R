@@ -202,7 +202,7 @@ for(q in 1:(4*nstates^2)){
 t_values <- p_values <- means <- ci_lower <- ci_upper <- numeric(4*nstates^2)
 
 # Extract values from each t.test object
-for (i in 1:4*nstates^2) {
+for (i in 1:(4*nstates^2)) {
   result <- statistics[[i]]
   t_values[i] <- result$statistic
   p_values[i] <- result$p.value
