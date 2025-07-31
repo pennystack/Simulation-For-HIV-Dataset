@@ -1,6 +1,6 @@
 # Install required packages
 if (!require("pacman")) install.packages("pacman")
-pacman::p_load("data.table", "dplyr", "optimx", "Rcpp", "svDialogs", "futile.logger")
+pacman::p_load("data.table", "dplyr", "optimx", "Rcpp", "purrr", "svDialogs", "futile.logger")
 
 
 # Load the necessary functions for the estimation of the simulated data
