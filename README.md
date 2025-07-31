@@ -1,3 +1,7 @@
+# HIV dataset simulation
+
+<br>
+
 ## 📖 Contents
 - [📝 Description of the simulation code](#-description-of-the-simulation-code)
 - [🗂️ Folder structure](#%EF%B8%8F-folder-structure)
