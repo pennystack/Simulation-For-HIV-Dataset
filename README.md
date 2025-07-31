@@ -1,5 +1,5 @@
 # 🧬 HIV Dataset Simulation code
-<small> *A simulation framework based on the non-homogeneous semi-Markov hypothesis.* </small>
+*A simulation framework based on the non-homogeneous semi-Markov hypothesis.*
 
 
 
@@ -19,10 +19,14 @@
 ## 📝 Description of the simulation code
 
  The following code was developed to validate and confirm the accuracy of the estimated model parameters in the non homogeneous semi-Markov model (as described in the *"Parametric and non-homogeneous semi-Markov process for HIV control"* by E.Mathieu, Y.Foucher, P.Dellamonica and JP.Daures) for studying the evolution of the disease in HIV - 1 infected patients. The model is described by the logit-transformed linear transition probabilities (corresponding parameters: $a_{ij}$ and $b_{ij}$) and the Weibull duration times (corresponding parameters: $v_{ij}$ and $s_{ij}$).
+
+
+ The original dataset consisted of 5,932 unique patients and 101,404 observations. This code simulates the same number of patients, to ensure comparability between the estimated parameters of the simulated dataset and those from the original data. The initial distribution used for sampling each patient's first state is based on the observed frequency of each state from the original dataset. For confidentiality reasons, the actual calculation of this distribution is not included in the code. Instead, the calculated values are provided directly in a vector.
  
 <br>
 
-> *📌 **Note**: The logit transformation was introduced in my master's thesis to address a technical limitation of the linear transition probabilities. It was not applied in the original non-homogeneous semi-Markov model proposed by Mathieu et al. (2007).*
+> *📌 **Note 1**: The logit transformation was introduced in my master's thesis to address a technical limitation of the linear transition probabilities. It was not applied in the original non-homogeneous semi-Markov model proposed by Mathieu et al. (2007).*
+> *📌 **Note 2**: The current code demonstrates the simulation of the HIV patient dataset for the four-state model, as defined in my master's thesis.*
 
 
 
