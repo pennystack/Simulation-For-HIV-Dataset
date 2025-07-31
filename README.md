@@ -18,7 +18,7 @@
  
 <br>
 
-> *📌 **Note**: The logit transformation was my addition to address a technical issue with the linear transition probabilities. It was not applied in the non-homogeneous semi-Markov model by Mathieu et al.(2007).*
+> *📌 **Note**: The logit transformation was introduced in my master's thesis to address a technical limitation of the linear transition probabilities. It was not applied in the original non-homogeneous semi-Markov model proposed by Mathieu et al. (2007).*
 
 
 
