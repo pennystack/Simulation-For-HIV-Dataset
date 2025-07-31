@@ -26,6 +26,8 @@
 <br>
 
 > *📌 **Note 1**: The logit transformation was introduced in my master's thesis to address a technical limitation of the linear transition probabilities. It was not applied in the original non-homogeneous semi-Markov model proposed by Mathieu et al. (2007).*
+
+
 > *📌 **Note 2**: The current code demonstrates the simulation of the HIV patient dataset for the four-state model, as defined in my master's thesis.*
 
 
