@@ -1,5 +1,5 @@
 # 🧬 HIV Dataset Simulation code
-<sub> A simulation framework based on the non-homogeneous semi-Markov hypothesis. </sub>
+*A simulation framework based on the non-homogeneous semi-Markov hypothesis.*
 
 
 
