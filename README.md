@@ -74,7 +74,7 @@
    `data.table`, `dplyr`, `optimx`, `Rcpp`, `purrr`, `svDialogs`, `futile.logger`
 
 2. **C++ libraries**:  
-   `iostream`, `Rcpp`, `libm`, `vector`
+   `libstdc++`, `Rcpp`, `libm`
 
 
 
