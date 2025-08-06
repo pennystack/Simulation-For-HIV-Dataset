@@ -101,7 +101,13 @@ while(n_estim <= n_bootstrap){
          }
        }
      }  
-     
+
+     for (i in 1:nstates) {
+       row_sum <- sum(P[i, ])
+       if (row_sum > 0) {
+         P[i, ] <- P[i, ] / row_sum
+       }
+     }
      
      # Sample the next_state from the probability matrix
      next_state <- sample(nstates, 1, prob = P[current_state, ])
