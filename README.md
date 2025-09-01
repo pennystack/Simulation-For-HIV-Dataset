@@ -71,7 +71,7 @@
 ## 📦 Packages and Libraries used
 
 1. **R packages**:  
-   `data.table`, `dplyr`, `optimx`, `Rcpp`, `purrr`, `svDialogs`, `futile.logger`
+   [`data.table`](https://cran.r-project.org/web/packages/data.table/index.html), [`dplyr`](https://cran.r-project.org/web/packages/dplyr/index.html), [`optimx`](https://cran.r-project.org/web/packages/optimx/index.html), [`Rcpp`](https://cran.r-project.org/web/packages/Rcpp/index.html), [`purrr`](https://cran.r-project.org/web/packages/purrr/index.html), [`svDialogs`](https://cran.r-project.org/web/packages/svDialogs/index.html), [`futile.logger`](https://cran.r-project.org/web/packages/futile.logger/index.html)
 
 2. **C++ libraries**:  
    `libstdc++`, `Rcpp`, `libm`
